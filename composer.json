@@ -3,7 +3,10 @@
     "autoload": {
         "psr-4": {
             "Ivan\\HexletPhp\\": "src/"
-        }
+        },
+        "files": [
+            "src/Runner.php"
+        ]
     },
     "authors": [
         {
@@ -11,5 +14,14 @@
             "email": "p2.2011@yandex.ru"
         }
     ],
-    "require": {}
+    "scripts": {
+        "phpcs": "phpcs"
+    },
+    "require": {
+        "tightenco/collect": "^9.52"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.4",
+        "squizlabs/php_codesniffer": "^3.7"
+    }
 }
